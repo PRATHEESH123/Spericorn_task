@@ -24,8 +24,15 @@ from rest_framework.routers import DefaultRouter
 # djoser
 from djoser.views import UserViewSet
 
+#local
+from team.views import MembersViewSet, SceduleViewSet, Team_nameViewSet
+
 router = DefaultRouter()
 router.register('users', UserViewSet)
+router.register('Members', MembersViewSet)
+router.register('Scedule', SceduleViewSet)
+router.register('team', Team_nameViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
