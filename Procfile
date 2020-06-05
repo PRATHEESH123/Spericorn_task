@@ -1,0 +1,1 @@
+web: gunicorn Spericorn_Task.wsgi --log-file -
